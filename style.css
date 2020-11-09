@@ -1,0 +1,60 @@
+.grifinoria{
+    background-color: rgba(160, 2, 2, 0.9);
+}
+.corvinal{
+    background-color: rgba(4, 32, 114, 0.898);
+}
+.sonserina{
+    background-color: rgba(0, 119, 6, 0.9);
+}
+.lufalufa{
+    background-color: rgba(255, 255, 0, 0.7);
+}
+.semcasa{
+    background-color: gray;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:  2px 2px 2px ;
+
+}
+#data{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.batata{
+    margin: 5px;
+    border-radius: 40px;
+    height: 400px;
+    width: 290px;
+    border: 3px solid gold;
+    box-shadow: 2px 2px 2px;
+    flex: auto;
+
+
+}
+.nome,.house{
+    font-size: 30px;
+    text-align: center;
+    font-family: bebas;
+    text-shadow: 1px 1px black;
+}
+body{
+    background-color: rgb(221, 218, 218);
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 70px ;
+    text-decoration-color: blueviolet;
+    text-shadow: 1px 1px grey;
+}
+searchbar{
+    text-align: center;
+}
