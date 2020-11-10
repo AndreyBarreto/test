@@ -1,2 +1,2 @@
-web site que futuramente adicionarei funcionalides de javascript, como search bar, e uma função que quando clica na imagem do personagem abre um 
-layout com infomações sobre o persongem, sobre a casa, seu patrono,
+Future Website getting a harry potter API, i will add some functionality with javascript like as interactive search bar, a card interactive with additional information about the characters(patrono,age)
+
