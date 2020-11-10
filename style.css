@@ -36,6 +36,7 @@
     border: 3px solid gold;
     box-shadow: 2px 2px 2px;
     flex: auto;
+    cursor: pointer;
 
 
 }
@@ -57,4 +58,23 @@ h1{
 }
 searchbar{
     text-align: center;
+}
+.batata:hover{
+    animation: bounce .4s;
+}
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+}
+40% {
+        transform: translateY(0px);
+}
+
+80% {
+        transform: translateY(-2px);
+}
+100% {
+        transform: translateY(0);
+}
+}
 }
