@@ -57,7 +57,9 @@ h1{
     border: 2px solid white;
     background-color: white;
     border-radius: 70%;
-    width: max-content;
+    display: inline;
+    border-width: 30px;
+    padding: 10px;
 
 }
 searchbar{
