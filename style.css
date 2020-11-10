@@ -51,16 +51,21 @@ body{
     text-align: center;
 }
 h1{
-    text-align: center;
     font-size: 70px ;
     text-decoration-color: blueviolet;
     text-shadow: 1px 1px grey;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 70%;
+    width: max-content;
+
 }
 searchbar{
     text-align: center;
 }
 .batata:hover{
     animation: bounce .4s;
+    transform-style: preserve-3d;
 }
 @keyframes bounce {
     20% {
