@@ -24,9 +24,9 @@ fetch("http://hp-api.herokuapp.com/api/characters")
         
         return `
             <div class="${cor()} batata">
-            <p class="nome" >${api.name}</p>
-            <p class="house">${api.house}</p>
-            <a href="https://www.w3schools.com" target=><img class="image" src=${api.image} alt="lalala" > </a>
+                <p class="nome" >${api.name}</p>
+                <p class="house">${api.house}</p>
+                <a href="https://www.google.com/"><img class="image" src=${api.image}></a>
             </div>
         `
     })
