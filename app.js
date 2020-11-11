@@ -6,7 +6,7 @@ fetch("http://hp-api.herokuapp.com/api/characters")
 .then(function(data) {
     console.log(data)
     //agora que começa a brincadeira
-    data.map((api)=>{
+    const generateHTML = data.map((api)=>{
         function cor(){
             if (api.house==="Gryffindor"){
                 return "grifinoria"
@@ -22,16 +22,15 @@ fetch("http://hp-api.herokuapp.com/api/characters")
             }    
         }   
         
-    
-        name+=`
+        return `
             <div class="${cor()} batata">
             <p class="nome" >${api.name}</p>
             <p class="house">${api.house}</p>
-            <img class="image" src=${api.image} alt="" onclick="alert('${api.name}')">
+            <a href="https://www.w3schools.com" target=><img class="image" src=${api.image} alt="lalala" > </a>
             </div>
         `
     })
-        document.getElementById("data").innerHTML=name
+        document.getElementById("data").innerHTML=generateHTML
         
         
 });
