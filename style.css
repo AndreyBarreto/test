@@ -1,92 +1,91 @@
-.grifinoria{
-    background-color: rgba(160, 2, 2, 0.9);
-}
-.corvinal{
-    background-color: rgba(8, 47, 165, 0.898);
-}
-.sonserina{
-    background-color: rgba(0, 119, 6, 0.9);
-}
-.lufalufa{
-    background-color: rgba(255, 255, 0, 0.7);
-}
-.semcasa{
-    background-color: gray;
-}
-.image{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow:  2px 2px 2px ;
-
-}
-#data{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.batata{
-    margin: 5px;
-    border-radius: 40px;
-    height: 400px;
-    width: 290px;
-    border: 3px solid gold;
-    box-shadow: 2px 2px 2px;
-    flex: auto;
-    /* cursor: pointer; */
-
-
-}
-.nome,.house{
-    font-size: 30px;
-    text-align: center;
-    font-family: bebas;
-    text-shadow: 1px 1px black;
-}
-body{
-    background-color: rgb(221, 218, 218);
-    text-align: center;
-}
-h1{
-    font-size: 70px ;
-    text-decoration-color: blueviolet;
-    text-shadow: 1px 1px grey;
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 70%;
-    display: inline;
-    border-width: 30px;
-    padding: 10px;
-
-}
-searchbar{
-    text-align: center;
-}
-.batata:hover{
-    animation: bounce .4s;
-    transform-style: preserve-3d;
-}
-@keyframes bounce {
-    20% {
-        transform: translateY(-6px);
-}
-40% {
-        transform: translateY(0px);
+body {
+  background-color: rgb(221, 218, 218);
+  text-align: center;
 }
 
-80% {
-        transform: translateY(-2px);
-}
-100% {
-        transform: translateY(0);
-}
+#data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* a {
-    color: inherit;
-    text-decoration: inherit;
-    font-family: inherit;
-} */
+.grifinoria {
+  background-color: rgba(160, 2, 2, 0.9);
+}
+.corvinal {
+  background-color: rgba(8, 47, 165, 0.898);
+}
+.sonserina {
+  background-color: rgba(0, 119, 6, 0.9);
+}
+.lufalufa {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+.semcasa {
+  background-color: gray;
+}
+.flip-card {
+  margin: 10px;
+  border-radius: 40px;
+  height: 400px;
+  width: 290px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* cursor: pointer; */
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px;
+  border: 3px solid gold;
+  color: black;
+}
+.flip-card-back {
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px;
+  border: 3px solid gold;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.image-character {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 2px;
+}
+.name-character,
+.house-character {
+  font-size: 30px;
+  text-align: center;
+  font-family: bebas;
+  text-shadow: 1px 1px black;
+}
+
+.potterdex-text{
+    height: 180px;
+    width: auto;
+}
+#potterdex-title{
+    margin-bottom: 50px;
+}
