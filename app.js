@@ -34,9 +34,10 @@ fetch("http://hp-api.herokuapp.com/api/characters")
                         <p>${api.hairColour}</p>
                         <p>${api.ancestry}</p>
                         <p>${api.patronus}</p>
-                        ${Object.values(api.wand).map((e) => {
-                          return `<p>${e}</p>`;
-                        }).join("")}
+                        <p>${api.wand.core}</p>
+                        <p>${api.wand.length}</p>
+                        <p>${api.wand.wood}</p>
+                        
                     </div>
                 </div>
             </div>
